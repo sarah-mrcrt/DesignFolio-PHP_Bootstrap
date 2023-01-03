@@ -4,7 +4,7 @@ if(isset($_POST['update'])) {
     $title = $_POST['title'];
     $description = $_POST['description'];
             
-    $sql = "UPDATE ecrit SET title='".$title."',description='".$description."' WHERE id = $id";
+    $sql = "UPDATE projet SET title='".$title."',description='".$description."' WHERE id = $id";
     $q = $pdo->prepare($sql);
     $q->execute(array($id));
     // URL vers laquelle rediriger une page + Alerte personnalisée

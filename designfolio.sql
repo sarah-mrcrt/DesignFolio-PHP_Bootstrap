@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : mar. 03 jan. 2023 à 23:08
+-- Généré le : mar. 03 jan. 2023 à 23:13
 -- Version du serveur :  5.7.31
 -- Version de PHP : 7.3.21
 
@@ -24,11 +24,11 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Structure de la table `ecrit`
+-- Structure de la table `projet`
 --
 
-DROP TABLE IF EXISTS `ecrit`;
-CREATE TABLE IF NOT EXISTS `ecrit` (
+DROP TABLE IF EXISTS `projet`;
+CREATE TABLE IF NOT EXISTS `projet` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) NOT NULL,
   `description` mediumtext,
@@ -36,13 +36,13 @@ CREATE TABLE IF NOT EXISTS `ecrit` (
   `idAuteur` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=107 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=108 DEFAULT CHARSET=utf8;
 
 --
--- Déchargement des données de la table `ecrit`
+-- Déchargement des données de la table `projet`
 --
 
-INSERT INTO `ecrit` (`id`, `title`, `description`, `image`, `idAuteur`) VALUES
+INSERT INTO `projet` (`id`, `title`, `description`, `image`, `idAuteur`) VALUES
 (106, 'Je change tous ça', 'Bah ui', 'assets/images/uploads/EXPOSITION-oeuvre1.jpg', 48),
 (100, 'Intrasec | Expo', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum feugiat massa a tincidunt. Integer eget dolor dictum, sagittis elit nec, posuere neque. Integer aliquam elit ut nisi congue, sit amet dictum erat vulputate. Phasellus vitae venenatis enim. Suspendisse vel lacus vel nisi dapibus dapibus id et sapien. Fusce malesuada purus at dui sollicitudin ultricies. Phasellus scelerisque, est ut eleifend pellentesque, nisl est feugiat sem, nec ultrices nibh justo et mi. Morbi id tincidunt tortor.', 'assets/images/uploads/EXPOSITION-oeuvre3.jpg', 48),
 (99, 'Palais des beaux arts | Expo', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum feugiat massa a tincidunt. Integer eget dolor dictum, sagittis elit nec, posuere neque. Integer aliquam elit ut nisi congue, sit amet dictum erat vulputate. Phasellus vitae venenatis enim. Suspendisse vel lacus vel nisi dapibus dapibus id et sapien. Fusce malesuada purus at dui sollicitudin ultricies. Phasellus scelerisque, est ut eleifend pellentesque, nisl est feugiat sem, nec ultrices nibh justo et mi. Morbi id tincidunt tortor.', 'assets/images/uploads/EXPOSITION-oeuvre2.jpg', 48),

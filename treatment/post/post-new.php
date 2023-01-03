@@ -20,7 +20,7 @@ if(!empty($_FILES["fileToUpload"]["name"])) {
         echo "Le fichier : ". basename( $_FILES["fileToUpload"]["name"]). " est en ligne";
 
         /* J'ajoute le nom du chemin dans ma base de donnée*/
-        $sql = "INSERT INTO ecrit VALUES(NULL, ?,?,?, ?);";
+        $sql = "INSERT INTO projet VALUES(NULL, ?,?,?, ?);";
         $query = $pdo->prepare($sql);
         $query->execute(array($_POST['titre'],$_POST['description'], $dossier .$fichier, $_SESSION['id']));
 

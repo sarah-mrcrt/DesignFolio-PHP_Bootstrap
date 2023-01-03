@@ -1,5 +1,5 @@
 <?php
-$sql = "DELETE FROM ecrit WHERE id=?";
+$sql = "DELETE FROM projet WHERE id=?";
 $q = $pdo->prepare($sql);
 $q->execute(array($_GET['id']));
 

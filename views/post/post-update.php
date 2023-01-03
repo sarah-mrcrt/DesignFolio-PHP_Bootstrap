@@ -1,5 +1,5 @@
 <?php
-$sql = "SELECT * FROM ecrit  where id=?";
+$sql = "SELECT * FROM projet WHERE id=?";
 $q = $pdo->prepare($sql);
 $q->execute(array($_GET['id']));
 $projet = $q->fetch();

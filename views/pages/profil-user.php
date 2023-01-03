@@ -44,7 +44,7 @@
           <div class="tab-pane fade show active" id="activity">
             <div class="row g-3">
               <?php
-              $sql = "SELECT ecrit.*,user.login, user.avatar FROM ecrit JOIN user ON idAuteur=user.id ORDER BY ecrit.id desc";
+              $sql = "SELECT projet.*,user.login, user.avatar FROM projet JOIN user ON idAuteur=user.id ORDER BY projet.id desc";
               $req = $pdo->query($sql);
               
               while($l = $req->fetch()) {
