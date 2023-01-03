@@ -3,8 +3,7 @@ unset($_SESSION['id']);
 unset($_SESSION['login']);
 
 // URL vers laquelle rediriger une page + Alerte personnalisée
-// header('Location: index.php');
-$_SESSION['info'] ="Vous êtes bien déconnecté";
+header('Location: index.php');
+$_SESSION['info'] ="Vous êtes bien déconnecté.e";
 ?>
-
-<script>window.location.href="index.php";</script>
+<!-- <script>window.location.href="index.php";</script> -->

@@ -17,12 +17,10 @@ if ($line = $query->fetch()) {
     $_SESSION['avatar'] = $line['avatar'];
     // URL vers laquelle rediriger une page
     header('Location: index.php?action=accueil');
-}
-else {
+    $_SESSION['info'] ="Bienvenu sur votre compte";
+} else {
     // URL vers laquelle rediriger une page + Alerte personnalisée
-    ?>
-    <script>window.location.href="index.php?action=login";</script>
-    <?php
+    header('Location: index.php?action=login');
     $_SESSION['info'] ="Votre email ou votre de mot de passe est incorrect";
 }
 ?>

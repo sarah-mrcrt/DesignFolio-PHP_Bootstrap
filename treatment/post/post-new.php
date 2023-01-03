@@ -1,9 +1,9 @@
 <?php
 print_r($_FILES);
-/* Je mets des br à chaque paragraphe de mon texte dans ma bdd*/
+
 $_POST['description'] = nl2br($_POST['description'], false);
 
-/*------------------ Uploader une IMAGE (+ textes s'il y en a) -------------------*/
+/*------------------ Uploader une IMAGE -------------------*/
 
 /* Je crée le dossier uploads */
 $dossier = "assets/images/uploads/";
@@ -32,5 +32,5 @@ if(!empty($_FILES["fileToUpload"]["name"])) {
 }
 // URL vers laquelle rediriger une page + Alerte personnalisée
 header("Location:" . $_SERVER['HTTP_REFERER']);
-$_SESSION['info'] = "Votre projet a été publié !";
+$_SESSION['info'] = "Votre projet a bien été publié !";
 ?>
