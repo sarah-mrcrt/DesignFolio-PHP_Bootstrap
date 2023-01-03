@@ -8,15 +8,15 @@
                 $q = $pdo->prepare($sql);
                 $q->execute(array($_POST['recherche']));
             ?>
-            <h1>Résultats de votre recherche : <span class="text-muted"><?php echo $recherche; ?></span></h1>
+            <h1>Résultats de votre recherche : <span><?php echo $recherche; ?></span></h1>
             <!-- Profil -->
             <?php
             while($personne = $q->fetch()){
                 $id = $personne['id'];
             ?>
-            <div class="col-lg-4 col-md-7">
+            <div class="col-lg-3 col-md-4 col-sm-6">
                 <a href="<?php echo "index.php?action=mur&id=$id" ?>">
-                    <div class="user-profil text-center p-3 rounded ombre">
+                    <div class="user-profil text-center p-3 rounded">
                         <img src="<?php echo $personne['avatar']?>" alt="<?php echo $personne['login']?>"
                             class="img-rounded">
                         <p class="my-3"><?php echo $personne['login']?></p>

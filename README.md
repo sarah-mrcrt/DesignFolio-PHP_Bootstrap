@@ -1,6 +1,7 @@
 
 # DesignFolio
-Rendu 2022-2023
+Design inspiré du néoBrutalism
+Rendu d'un site PHP/Bootstrap pour l'année 2022-2023.
 
 ## Critères de notation
 Le but de ce TP est de démontrer vos capacités à utiliser Bootstrap (structure interface) et PHP pour manipuler une base de données (BDD).

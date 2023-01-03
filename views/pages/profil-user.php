@@ -11,7 +11,7 @@
       <!-- Profil -->
       <div class="col-md-3 mt-md-5 mb-3">
         <div class="user-profil text-center p-3 rounded ombre">
-          <img src="<?php echo $personne['avatar']?>" alt="<?php echo $personne['login']?>" class="img-rounded">
+          <img src="<?php echo $personne['avatar']?>" alt="<?php echo $personne['login']?>" class="avatar">
           <p class="my-3"><?php echo $personne['login']?></p>
         </div>
       </div>

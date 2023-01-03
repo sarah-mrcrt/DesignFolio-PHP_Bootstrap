@@ -3,11 +3,11 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-10">
-                <div class="wrap d-md-flex ombre">
+                <div class="login d-md-flex">
                     <div class="img d-none d-md-inline" style="background-image: url(assets/images/registration.jpg);">
                     </div>
                     <div class="login-wrap p-4 p-md-5">
-                        <h3 class="mb-4">Se connecter</h3>
+                        <h1 class="mb-4">Se connecter</h1>
                         <form action="index.php?action=inscription" method="POST" enctype='multipart/form-data'
                             class="signin-form">
                             <div class="form-group mb-3">

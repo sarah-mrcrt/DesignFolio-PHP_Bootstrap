@@ -7,22 +7,17 @@
         <div class="content h-100">
             <img src="./<?php echo $l['image'];?>" alt="<?php echo $l['title'];?>" class="card-img h-100">
             <!-- Image overlay -->
-            <div class="card-img-overlay">
+            <div class="card-img-overlay overlay-img">
                 <a href="<?php echo "index.php?action=mur&id=$id" ?>">
-                    <img src="<?php echo $l['avatar'];?>" alt="<?php echo $l['login']; ?>" class="avatar img-rounded">
+                    <img src="<?php echo $l['avatar'];?>" alt="<?php echo $l['login']; ?>" class="avatar avatar-sm">
                 </a>
-                <a class="card-text" href="<?php echo "index.php?action=mur&id=$id"?>">
-                    <?php echo $l['login']; ?>
-                </a>
-
             </div>
-            <!-- /. Image overlay -->
-            <!-- Hover overlay -->
-            <div class="content-overlay"></div>
-            <div class="content-details">
-                <h5 class="card-title"><?php echo $l['title'];?></h5>
+            <div class="card-img-overlay overlay-text">
+                <div>
+                    <h2 class="card-title"><?php echo $l['title'];?></h2>
+                </div>
             </div>
-            <!-- /. Hover overlay -->
+            <!-- /. Image overlay -->>
         </div>
     </div>
     <!-- ./Card -->
@@ -41,11 +36,11 @@
                 if (isset($_SESSION['id'])) {
                     if($l['idAuteur'] == $_SESSION['id']) { 
                 ?>
-                <div class="modal-footer">
+                <div class="modal-footer justify-content-start">
                     <a href="index.php?action=del-post&id=<?php echo $l['id']; ?>" class="btn btn-danger">Supprimer <i
                             class="fa-solid fa-trash"></i></a>
-                    <a href="index.php?action=update-post&id=<?php echo $l['id']; ?>" class="btn btn-warning">Modifier <i
-                            class="fa-solid fa-pen-to-square"></i></a>
+                    <a href="index.php?action=update-post&id=<?php echo $l['id']; ?>"
+                        class="btn btn-warning mx-sm-4 mx-2">Modifier <i class="fa-solid fa-pen-to-square"></i></a>
                 </div>
                 <?php }} ?>
             </div>

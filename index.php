@@ -31,7 +31,7 @@ session_start();
         <!------------------- TOASTER ------------------->
         <?php if (isset($_SESSION['info'])) { ?>
         <div class="toast-container position-fixed top-0 end-0 p-5" id="myToast">
-            <div class="toast fade show" >
+            <div class="toast fade show">
                 <div class="toast-header">
                     <strong class="me-auto">Information</strong>
                     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
@@ -64,115 +64,19 @@ session_start();
         </main>
 
         <!------------------- HEADER ------------------->
-        <nav id="ma_navbar" class="navbar fixed-top navbar-expand-md navbar-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.php?action=accueil">DesignFolio</a>
-                <!-- Menu burger -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <!-- Menu PC -->
-                <!-- Collapse = elemet qui disparait -->
-                <div class="collapse navbar-collapse pt-3 pt-md-0" id="navbarSupportedContent">
-                    <!-- Recherche -->
-                    <?php if (isset($_SESSION['id'])) { ?>
-                    <form action='index.php?action=recherche' method='POST' class="col-sm-7 ms-auto">
-                        <div class="input-group">
-                            <input type='search' class="form-control" placeholder='Rechercher des designers'
-                                name='recherche' aria-label="Recherche" aria-describedby="basic-addon1">
-                            <button type="submit" class="btn btn-primary" action="index.php?action=accueil">
-                                <i class="fa-solid fa-magnifying-glass"></i>
-                            </button>
-                        </div>
-                    </form>
-                    <?php } ?>
-                    <!-- /.Recherche -->
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="index.php?action=accueil">Accueil</a>
-                        </li>
-                        <!-- ----------  Connexion -->
-                        <?php if (!isset($_SESSION['id'])) { ?>
-                        <li class="nav-item">
-                            <a href='index.php?action=login' class="nav-link">Connexion</a>
-                        </li>
-                        <?php } ?>
-                        <!-- ----------  /.Connexion -->
-                        <!-- ---------- Profil -->
-                        <?php if (isset($_SESSION['id'])) { ?>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                <img src="<?php echo  $_SESSION['avatar']; ?>" alt="<?php echo $_SESSION['login']?>"
-                                    class="rounded avatar">
-                            </a>
-                            <ul class="dropdown-menu">
-                                <!-- Mon compte -->
-                                <li>
-                                    <a href="index.php?action=mur&id=<?php echo $_SESSION['id']; ?>"
-                                        class="dropdown-item">
-                                        Mon profil
-                                    </a>
-                                </li>
-                                <!-- /. Mon compte -->
-                                <li>
-                                    <hr class="dropdown-divider">
-                                </li>
-                                <li>
-                                    <!-- Déconnexion -->
-                                    <a href='index.php?action=deconnexion' class="dropdown-item">Déconnexion</a>
-
-                                    <!-- /.Déconnexion -->
-                                </li>
-                            </ul>
-                        </li>
-                        <?php } ?>
-                    </ul>
-                    <!-- ----------  /.Profil -->
-                </div>
-            </div>
-        </nav>
+        <?php
+        include("views/layouts/header.php")
+        ?>
         <!------------------- FOOTER ------------------->
-        <footer>
-            <div class="container">
-                <div class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                    <div class="col-md-4 d-flex align-items-center">
-                        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-                            <svg class="bi" width="30" height="24">
-                                <use xlink:href="#bootstrap"></use>
-                            </svg>
-                        </a>
-                        <span class="mb-3 mb-md-0 text-muted">© Sarah Mauriaucourt</span>
-                    </div>
-                    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-                        <li class="ms-3">
-                            <a class="text-muted" href="#">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                        </li>
-                        <li class="ms-3">
-                            <a class="text-muted" href="#">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li class="ms-3">
-                            <a class="text-muted" href="#">
-                                <i class="fa-brands fa-twitter"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+        <?php
+        include("views/layouts/footer.php")
+        ?>
+
         <!------------------- JavaScript ------------------->
         <!-- Bootstrap.js -->
         <script src="./assets/js/bootstrap.bundle.min.js"></script>
         <!-- WOW.js -->
         <script src="./assets/js/wow.min.js"></script>
-        <!-- JS -->
-        <script src="./assets/js/js.js"></script>
         <!-- configuration de wow.js -->
         <script>
             new WOW({
@@ -182,4 +86,5 @@ session_start();
             }).init();
         </script>
     </body>
+
 </html>

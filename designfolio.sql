@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le : lun. 02 jan. 2023 à 15:23
+-- Généré le : mar. 03 jan. 2023 à 23:08
 -- Version du serveur :  5.7.31
 -- Version de PHP : 7.3.21
 
@@ -36,14 +36,14 @@ CREATE TABLE IF NOT EXISTS `ecrit` (
   `idAuteur` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `id` (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=103 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=107 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `ecrit`
 --
 
 INSERT INTO `ecrit` (`id`, `title`, `description`, `image`, `idAuteur`) VALUES
-(102, 'Désordre | Expo', 'La maison des étudiants vous présente une exposition inédite sur le thème du désordre. Nous vous invitons à découvrir cette installation captivante et à réfléchir aux enjeux de la société moderne.', 'assets/images/uploads/Exposition-Le-desordre.jpg', 48),
+(106, 'Je change tous ça', 'Bah ui', 'assets/images/uploads/EXPOSITION-oeuvre1.jpg', 48),
 (100, 'Intrasec | Expo', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum feugiat massa a tincidunt. Integer eget dolor dictum, sagittis elit nec, posuere neque. Integer aliquam elit ut nisi congue, sit amet dictum erat vulputate. Phasellus vitae venenatis enim. Suspendisse vel lacus vel nisi dapibus dapibus id et sapien. Fusce malesuada purus at dui sollicitudin ultricies. Phasellus scelerisque, est ut eleifend pellentesque, nisl est feugiat sem, nec ultrices nibh justo et mi. Morbi id tincidunt tortor.', 'assets/images/uploads/EXPOSITION-oeuvre3.jpg', 48),
 (99, 'Palais des beaux arts | Expo', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras fermentum feugiat massa a tincidunt. Integer eget dolor dictum, sagittis elit nec, posuere neque. Integer aliquam elit ut nisi congue, sit amet dictum erat vulputate. Phasellus vitae venenatis enim. Suspendisse vel lacus vel nisi dapibus dapibus id et sapien. Fusce malesuada purus at dui sollicitudin ultricies. Phasellus scelerisque, est ut eleifend pellentesque, nisl est feugiat sem, nec ultrices nibh justo et mi. Morbi id tincidunt tortor.', 'assets/images/uploads/EXPOSITION-oeuvre2.jpg', 48),
 (97, 'Chella Man | Couverture', 'Lors d’un cours d’esthétisme, j’ai dû réaliser la première et quatrième de couverture d’un livre monographique imaginaire d’un artiste. J’ai choisi Chella Man qui est une personnalité que j’aime beaucoup, car il est un symbole de bienveillance, d’ouverture d’esprit et de pouvoir. Il se caractérise en tant qu’artiste sourd, transgenre et juif pour faire passer des messages d’acceptation de soi et de l’autre.', 'assets/images/uploads/2018-Chella-Man.jpg', 47),
@@ -68,15 +68,18 @@ CREATE TABLE IF NOT EXISTS `user` (
   `avatar` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `email` (`email`)
-) ENGINE=MyISAM AUTO_INCREMENT=49 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=52 DEFAULT CHARSET=utf8;
 
 --
 -- Déchargement des données de la table `user`
 --
 
 INSERT INTO `user` (`id`, `login`, `mdp`, `email`, `avatar`) VALUES
+(50, 'Lalex', '*A4B6157319038724E3560894F7F932C8886EBFCF', 'alex.l@gmail.com', 'assets/images/avatar/ARTISTE-Midas-hofstra.jpg'),
+(49, 'bob', '*A4B6157319038724E3560894F7F932C8886EBFCF', 'spongeBob@gmail.com', 'assets/images/avatar/ARTISTE-tim-zankert.jpg'),
 (48, 'Jojo', '*A4B6157319038724E3560894F7F932C8886EBFCF', 'john.doe@gmail.com', 'assets/images/avatar/ARTISTE-Aurelien-thomas.jpg'),
-(47, 'dotriocour', '*A4B6157319038724E3560894F7F932C8886EBFCF', 'mauriaucourt.sarah@gmail.com', 'assets/images/avatar/vinicius-amnx-amano.jpg');
+(47, 'dotriocour', '*A4B6157319038724E3560894F7F932C8886EBFCF', 'mauriaucourt.sarah@gmail.com', 'assets/images/avatar/vinicius-amnx-amano.jpg'),
+(51, 'ines ', '*A4B6157319038724E3560894F7F932C8886EBFCF', 'ines@hotmail.com', 'assets/images/avatar/ARTISTE-rever-mathylde.jpg');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
