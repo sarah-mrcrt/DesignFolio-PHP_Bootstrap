@@ -4,7 +4,6 @@ print_r($_FILES);
 $_POST['description'] = nl2br($_POST['description'], false);
 
 /*------------------ Uploader une IMAGE -------------------*/
-
 /* Je crée le dossier uploads */
 $dossier = "assets/images/uploads/";
 
@@ -28,9 +27,8 @@ if(!empty($_FILES["fileToUpload"]["name"])) {
         /* Si la demande d'upload n'est pas une image */
         echo "Ceci n'est pas une image ! Par conséquent, on ne peut la publier";
     }
-    /*------------------ Uploader que du TEXTE -------------------*/
 }
-// URL vers laquelle rediriger une page + Alerte personnalisée
+// ******************* Redirection + Toast
 header("Location:" . $_SERVER['HTTP_REFERER']);
 $_SESSION['info'] = "Votre projet a bien été publié !";
 ?>

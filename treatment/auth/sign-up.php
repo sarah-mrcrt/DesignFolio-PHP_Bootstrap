@@ -41,9 +41,11 @@ if(isset($_POST['login'], $_POST['email'], $_POST['mdp'], $_POST['avatar'])) {
             $_SESSION['email'] = $_POST['email'];
             $_SESSION['login'] = $_POST['login'];
         }
+        // ******************* Redirection + Toast
         header('Location: index.php?action=accueil');
         $_SESSION['info'] ="Votre compte a été crée avec succès";
     } else {
+        // ******************* Redirection + Toast
         header('Location: index.php?action=registration');
         $_SESSION['info'] ="L'adresse email renseignée existe déjà";
     }

@@ -7,7 +7,7 @@
                     <div class="img d-none d-md-inline" style="background-image: url(assets/images/registration.jpg);">
                     </div>
                     <div class="login-wrap p-4 p-md-5">
-                        <h1 class="mb-4">Se connecter</h1>
+                        <h1 class="mb-4">S'inscrire</h1>
                         <form action="index.php?action=inscription" method="POST" enctype='multipart/form-data'
                             class="signin-form">
                             <div class="form-group mb-3">

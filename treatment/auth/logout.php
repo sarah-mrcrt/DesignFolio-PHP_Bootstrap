@@ -1,9 +1,7 @@
 <?php
 unset($_SESSION['id']);
 unset($_SESSION['login']);
-
-// URL vers laquelle rediriger une page + Alerte personnalisée
+// ******************* Redirection + Toast
 header('Location: index.php');
 $_SESSION['info'] ="Vous êtes bien déconnecté.e";
 ?>
-<!-- <script>window.location.href="index.php";</script> -->

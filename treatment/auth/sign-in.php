@@ -15,11 +15,11 @@ if ($line = $query->fetch()) {
     $_SESSION['login'] = $line['login'];
     $_SESSION['email'] = $line['email'];
     $_SESSION['avatar'] = $line['avatar'];
-    // URL vers laquelle rediriger une page
+    // ******************* Redirection + Toast
     header('Location: index.php?action=accueil');
     $_SESSION['info'] ="Bienvenue sur votre compte";
 } else {
-    // URL vers laquelle rediriger une page + Alerte personnalisée
+    // ******************* Redirection + Toast
     header('Location: index.php?action=login');
     $_SESSION['info'] ="Votre email ou votre de mot de passe est incorrect";
 }

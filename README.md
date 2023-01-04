@@ -6,9 +6,10 @@
 ## Pages
 - [Accueil](http://localhost/M1_DGI/DesignFolio-PHP_Bootstrap/index.php?action=accueil)
 - [Connexion](http://localhost/M1_DGI/DesignFolio-PHP_Bootstrap/index.php?action=login)
-- [Registration](http://localhost/M1_DGI/DesignFolio-PHP_Bootstrap/index.php?action=registration)
-- [Recherche](http://localhost/M1_DGI/DesignFolio-PHP_Bootstrap/index.php?action=recherche)
+- [Inscription](http://localhost/M1_DGI/DesignFolio-PHP_Bootstrap/index.php?action=registration)
+- Recherche
 - [Profil](http://localhost/M1_DGI/DesignFolio-PHP_Bootstrap/index.php?action=mur&id=47)
+- Modifier un projet
 
 ## Composants utilisés
 - NavBar
