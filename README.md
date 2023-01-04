@@ -1,7 +1,23 @@
 # DesignFolio
-Concept : Réseau social pour que les designers postent leurs projets.
-Design : Neobrutalism.
-Devoir : Rendu d'un site PHP/Bootstrap pour l'année 2022-2023.
+- Concept : Réseau social pour que les designers postent leurs projets.
+- Design : Neobrutalism.
+- Devoir : Rendu d'un site PHP/Bootstrap pour l'année 2022-2023.
+
+## Pages
+- [Accueil](http://localhost/M1_DGI/DesignFolio-PHP_Bootstrap/index.php?action=accueil)
+- [Connexion](http://localhost/M1_DGI/DesignFolio-PHP_Bootstrap/index.php?action=login)
+- [Registration](http://localhost/M1_DGI/DesignFolio-PHP_Bootstrap/index.php?action=registration)
+- [Recherche](http://localhost/M1_DGI/DesignFolio-PHP_Bootstrap/index.php?action=recherche)
+- [Profil](http://localhost/M1_DGI/DesignFolio-PHP_Bootstrap/index.php?action=mur&id=47)
+
+## Composants utilisés
+- NavBar
+- Formulaire
+- Card
+- Modal
+- Toast
+- Dropdown
+- Tabs
 
 ## Critères de notation
 Le but de ce TP est de démontrer vos capacités à utiliser Bootstrap (structure interface) et PHP pour manipuler une base de données (BDD).
@@ -31,19 +47,5 @@ Le but de ce TP est de démontrer vos capacités à utiliser Bootstrap (structur
 - pouvoir supprimer un objet de la BDD (DELETE)
 - pouvoir modifier un objet de la BDD (UPDATE)
 
-## Authors
+## Auteur
 - [Sarah Mauriaucourt](https://sarahmauriaucourt.fr/)
-
-## Pages
-- Accueil
-- Connexion/Inscription
-- Recherche
-- Profil
-
-## Composants utilisés
-- NavBar
-- Formulaire
-- Card
-- Modal
-- Dropdown
-- Onglet
