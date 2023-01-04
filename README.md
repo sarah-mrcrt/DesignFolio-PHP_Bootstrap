@@ -4,12 +4,13 @@
 - Devoir : Rendu d'un site PHP/Bootstrap pour l'année 2022-2023.
 
 ## Pages
-- [Accueil](http://localhost/M1_DGI/DesignFolio-PHP_Bootstrap/index.php?action=accueil)
-- [Connexion](http://localhost/M1_DGI/DesignFolio-PHP_Bootstrap/index.php?action=login)
-- [Inscription](http://localhost/M1_DGI/DesignFolio-PHP_Bootstrap/index.php?action=registration)
+- [Accueil](index.php?action=accueil)
+- [Connexion](index.php?action=login)
+- [Inscription](index.php?action=registration)
 - Recherche
-- [Profil](http://localhost/M1_DGI/DesignFolio-PHP_Bootstrap/index.php?action=mur&id=47)
+- [Profil](index.php?action=mur&id=47)
 - Modifier un projet
+- [Erreur 404](index.php?action=erreur)
 
 ## Composants utilisés
 - NavBar
