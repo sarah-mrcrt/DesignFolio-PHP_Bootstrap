@@ -20,7 +20,7 @@
                             </div>
                             <div class="form-group mb-3">
                                 <button type="submit"
-                                    class="form-control btn btn-primary rounded submit px-3">Connexion</button>
+                                    class="form-control btn btn-primary submit px-3">Connexion</button>
                             </div>
                         </form>
                         <p class="mt-3">Vous n'êtes pas membre ?

@@ -19,6 +19,7 @@
 - Toast
 - Dropdown
 - Tabs
+- Jumbotron
 
 ## Critères de notation
 Le but de ce TP est de démontrer vos capacités à utiliser Bootstrap (structure interface) et PHP pour manipuler une base de données (BDD).
