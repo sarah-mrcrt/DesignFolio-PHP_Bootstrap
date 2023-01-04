@@ -5,7 +5,7 @@ $q->execute(array($_GET['id']));
 $projet = $q->fetch();
 ?>
 
-<section>
+<section class="wow animate__fadeInUp" data-wow-duration=".8s" data-wow-delay="0.2s">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-10">
@@ -24,13 +24,13 @@ $projet = $q->fetch();
                             <div class="form-group mb-3">
                                 <label for="title" class="form-label">Titre de votre projet*</label>
                                 <input type="text" name="title" class="form-control" placeholder="Titre de votre projet"
-                                    maxlength="30" required>
+                                value="<?php echo $projet['title']?>" maxlength="30" required>
                             </div>
 
                             <div class="form-group mb-3">
                                 <label for="description">Description*</label>
                                 <textarea name="description" id="description" class="form-control" rows="4"
-                                    maxlength="350" placeholder="Ecrire quelque chose ici ..." required></textarea>
+                                    maxlength="350" placeholder="Ecrire quelque chose ici ..." required><?php echo $projet['description']?></textarea>
                             </div>
 
                             <div class="form-group mb-3 text-end">

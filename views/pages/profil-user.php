@@ -9,7 +9,7 @@
   <div class="container">
     <div class="row g-3">
       <!-- Profil -->
-      <div class="col-md-3 mt-md-5 mb-3">
+      <div class="col-md-3 mt-md-5 mb-3 wow animate__fadeInLeft" data-wow-delay="0.1s" data-wow-duration=".8s" data-wow-delay="0.2s">
         <div class="user-profil text-center p-3 rounded ombre">
           <img src="<?php echo $personne['avatar']?>" alt="<?php echo $personne['login']?>" class="avatar">
           <p class="my-3"><?php echo $personne['login']?></p>
@@ -17,7 +17,7 @@
       </div>
       <!-- /.Profil -->
       <!-- Composants : TABS -->
-      <div class="col-md-9">
+      <div class="col-md-9 wow animate__fadeInRight" data-wow-delay="0.1s" data-wow-duration=".8s" data-wow-delay="0.2s">
         <!-- Onglets -->
         <div class="d-flex justify-content-center">
           <ul class="nav nav-tabs" id="myTab">
@@ -101,5 +101,4 @@
     <!-- /.Content -->
   </div>
   <!-- /. Composants Tabs -->
-  </div>
 </section>

@@ -1,5 +1,5 @@
 <?php if (!isset($_SESSION['id'])) { ?>
-<section>
+<section class="wow animate__fadeInUp" data-wow-duration=".8s" data-wow-delay="0.2s">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-10">

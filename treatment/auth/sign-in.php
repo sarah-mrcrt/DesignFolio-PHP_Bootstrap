@@ -17,7 +17,7 @@ if ($line = $query->fetch()) {
     $_SESSION['avatar'] = $line['avatar'];
     // URL vers laquelle rediriger une page
     header('Location: index.php?action=accueil');
-    $_SESSION['info'] ="Bienvenu sur votre compte";
+    $_SESSION['info'] ="Bienvenue sur votre compte";
 } else {
     // URL vers laquelle rediriger une page + Alerte personnalisée
     header('Location: index.php?action=login');

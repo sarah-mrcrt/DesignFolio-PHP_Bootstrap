@@ -1,7 +1,7 @@
 <!-- PROJET -->
 <div class="col-sm-6 col-md-6 d-flex align-items-stretch">
     <!-- Card -->
-    <div class="card w-100 wow ombre animate__fadeInUp" data-wow-duration=".8s" data-wow-delay="0.2s"
+    <div class="card w-100"
         data-bs-toggle="modal" data-bs-target="#p<?php echo $l['id'];?>"
         style="visibility: visible; animation-duration: 0.3s; animation-delay: 0.2s; animation-name: fadeInUp;">
         <div class="content h-100">

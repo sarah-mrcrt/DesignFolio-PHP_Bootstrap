@@ -1,5 +1,5 @@
 <?php if (!isset($_SESSION['id'])) { ?>
-<section>
+<section class="wow animate__fadeInUp" data-wow-duration=".8s" data-wow-delay="0.2s">
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12 col-lg-10">
@@ -16,7 +16,7 @@
                             </div>
                             <div class="form-group mb-4">
                                 <label for="mdp" class="form-label">Mot de passe*</label>
-                                <input type="password" name="mdp" class="form-control" placeholder="******" required>
+                                <input type="password" name="mdp" class="form-control" placeholder="******" value="1234" required>
                             </div>
                             <div class="form-group mb-3">
                                 <button type="submit"

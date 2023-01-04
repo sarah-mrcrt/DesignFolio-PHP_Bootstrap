@@ -3,6 +3,7 @@ body {
   font-family: 'Raleway', sans-serif;
   background-color: #ED8B1C;
   color: #212026;
+  overflow-x: hidden;
 }
 
 main {
@@ -16,6 +17,7 @@ section:first-child {
 /* Titres */
 h1,
 h2 {
+  transform-origin: 0% 0% !important; 
   font-weight: bold;
   text-transform: uppercase;
 }

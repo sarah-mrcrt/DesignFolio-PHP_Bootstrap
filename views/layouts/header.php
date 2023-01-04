@@ -21,7 +21,7 @@
             </form>
             <!-- /.Recherche -->
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                <li class="nav-item">
+                <li class="nav-item my-auto">
                     <a class="nav-link" aria-current="page" href="index.php?action=accueil">Accueil</a>
                 </li>
                 <!-- ----------  Connexion -->

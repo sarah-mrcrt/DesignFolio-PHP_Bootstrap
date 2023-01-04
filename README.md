@@ -1,7 +1,7 @@
-
 # DesignFolio
-Design inspiré du néoBrutalism
-Rendu d'un site PHP/Bootstrap pour l'année 2022-2023.
+Concept : Réseau social pour que les designers postent leurs projets.
+Design : Neobrutalism.
+Devoir : Rendu d'un site PHP/Bootstrap pour l'année 2022-2023.
 
 ## Critères de notation
 Le but de ce TP est de démontrer vos capacités à utiliser Bootstrap (structure interface) et PHP pour manipuler une base de données (BDD).
@@ -33,3 +33,17 @@ Le but de ce TP est de démontrer vos capacités à utiliser Bootstrap (structur
 
 ## Authors
 - [Sarah Mauriaucourt](https://sarahmauriaucourt.fr/)
+
+## Pages
+- Accueil
+- Connexion/Inscription
+- Recherche
+- Profil
+
+## Composants utilisés
+- NavBar
+- Formulaire
+- Card
+- Modal
+- Dropdown
+- Onglet

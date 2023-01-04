@@ -64,13 +64,9 @@ session_start();
         </main>
 
         <!------------------- HEADER ------------------->
-        <?php
-        include("views/layouts/header.php")
-        ?>
+        <?php include("views/layouts/header.php") ?>
         <!------------------- FOOTER ------------------->
-        <?php
-        include("views/layouts/footer.php")
-        ?>
+        <?php include("views/layouts/footer.php") ?>
 
         <!------------------- JavaScript ------------------->
         <!-- Bootstrap.js -->
